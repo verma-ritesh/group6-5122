@@ -1,0 +1,29 @@
+--- 
+title: "Final Report"
+author: "Chinanu Onyekachi, Sirisha Manam, Barry Turner, Ritesh Verma"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+biblio-style: apalike
+link-citations: yes
+description: "This is a final report that outlines all the work done for the Final Project Shiny app and its relevant objective."
+---
+
+# Stocks {-}
+```{r eval=FALSE, echo=FALSE}
+install.packages("bookdown")
+# or the development version
+# devtools::install_github("rstudio/bookdown")
+```
+
+```{r echo=FALSE}
+knitr::include_graphics(rep("download.jfif", 1))
+```
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```

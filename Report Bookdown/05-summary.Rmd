@@ -1,0 +1,6 @@
+# User evaluation
+
+## How would you test your system?
+- We deployed the shiny app on the website and then asked each team members to provide feedback. Designated team member was tasked with regression testing of all app features and reported back to team with issues found.
+
+- In the next iterations of our application development, we fixed all issues, tested all features worked according to design and redeployed the app.

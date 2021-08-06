@@ -1,0 +1,10 @@
+# Introduction: Domain problem characterization {#intro}
+
+What is the problem you want to solve?
+
+- Analyze volatility of US stock in comparison with other stock indexes and then predict future trend of US stock market.
+- Analyzing trend on 11 indexes
+- How these indexes influence each other
+- Predicting future trend of these indexes
+
+

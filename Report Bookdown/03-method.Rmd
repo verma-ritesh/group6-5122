@@ -1,0 +1,26 @@
+# Encoding/Interaction design:
+
+
+```{r echo=FALSE, fig.align = 'center', out.width="80%"}
+knitr::include_graphics(rep("DataSet-Diagram.png", 1))
+```
+
+## Did you use the most effective data visualization design?
+We felt we used the best kind of plots for visualizing time series data.Using the designs we picked we are able to detect patterns, outliers that defy those patterns, periods where data is stationary or non-stationary, and whether there is correlation between the variables.
+
+The objective of Shiny App is to create interactive graphical representations of Stock Index.  Here are the charts we used to visualize our time series stock data:
+
+- High price trend 
+  - Overall Stock Index trend and their comparison on a given time.
+  
+- Scatter plot
+  - Overall Stock Index volume and their comparison on a given time.
+  
+- Candlestick
+  - Fluctuation of Stock Index on each day, month and year and their comparison
+  
+- ARIMA price prediction plot
+  - Prediction of future months Fluctuation of Stock Index based on Closing price.
+
+- Animated Bubble plot
+  - Depicts overall closing price changed in comparison with other.

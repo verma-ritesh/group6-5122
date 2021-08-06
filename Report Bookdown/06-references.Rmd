@@ -1,0 +1,12 @@
+# Future work {-}
+
+## What could you do next? {-}
+- We have a plan to include external factor like Inflation rate, crude oil index, etc to understand impact of their data on US Stock index.
+
+- We also plan on linking each Stock Index with their associated country name, so that the name and labels of the indexes would be easily understood by a wider audience.
+
+- Adding more customization options in the left navigation panel would allow us to customize our graphs & charts to the users preference. Other options can also be used to add/remove features like trend line, smoothing line, moving average, etc to our visualizations.
+
+- The inclusion of user friendly options like print, save, share or email would give our application the ability to be easily shared and consumed by a much wider audience.
+
+- Adding bootstrap features to our Shiny App as opposed to fluidpage for the charts, would allow it to be more responsive, to changes in the dimesnions of what ever device our application is being viewed on.

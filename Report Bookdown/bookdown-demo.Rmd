@@ -1,0 +1,143 @@
+--- 
+title: "Final Report"
+author: "Chinanu Onyekachi, Sirisha Manam, Barry Turner, Ritesh Verma"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+biblio-style: apalike
+link-citations: yes
+description: "This is a final report that outlines all the work done for the Final Project Shiny app and its relevant objective."
+---
+--- 
+title: "Final Report"
+author: "Chinanu Onyekachi, Sirisha Manam, Barry Turner, Ritesh Verma"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+biblio-style: apalike
+link-citations: yes
+description: "This is a final report that outlines all the work done for the Final Project Shiny app and its relevant objective."
+---
+
+# Stocks {-}
+```{r eval=FALSE, echo=FALSE}
+install.packages("bookdown")
+# or the development version
+# devtools::install_github("rstudio/bookdown")
+```
+
+```{r echo=FALSE}
+knitr::include_graphics(rep("download.jfif", 1))
+```
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
+
+<!--chapter:end:index.Rmd-->
+
+# Introduction: Domain problem characterization {#intro}
+
+What is the problem you want to solve?
+
+- Analyze volatility of US stock in comparison with other stock indexes and then predict future trend of US stock market.
+- Analyzing trend on 11 indexes
+- How these indexes influence each other
+- Predicting future trend of these indexes
+
+
+
+<!--chapter:end:01-intro.Rmd-->
+
+# Data/operation abstraction design
+
+## How did you prepare your data?
+- Here are the steps we took to prepare data:
+  1. Downloaded data from kaggle website
+  2. Imported this data into dataframe
+  3. Cleaned data and cast date alphanumeic field to data field
+  4. Finally created merged dataframe called Master Data
+
+## Datasets Charateristics
+
+```{r echo=FALSE, fig.align = 'center', out.width="80%"}
+knitr::include_graphics(rep("data_characteristics.JPG", 1))
+```
+
+- indexData - Raw index price information, prices are quoted in each exchanges national currency
+- IndexInfo - Stock exchange info including location, name of exchange, index ticker, and currency index is quoted in
+- indexProcessed - index price information with null values removed and closing prices in USD added as a column
+
+<!--chapter:end:02-literature.Rmd-->
+
+# Encoding/Interaction design:
+
+
+```{r echo=FALSE, fig.align = 'center', out.width="80%"}
+knitr::include_graphics(rep("DataSet-Diagram.png", 1))
+```
+
+## Did you use the most effective data visualization design?
+We felt we used the best kind of plots for visualizing time series data.Using the designs we picked we are able to detect patterns, outliers that defy those patterns, periods where data is stationary or non-stationary, and whether there is correlation between the variables.
+
+The objective of Shiny App is to create interactive graphical representations of Stock Index.  Here are the charts we used to visualize our time series stock data:
+
+- High price trend 
+  - Overall Stock Index trend and their comparison on a given time.
+  
+- Scatter plot
+  - Overall Stock Index volume and their comparison on a given time.
+  
+- Candlestick
+  - Fluctuation of Stock Index on each day, month and year and their comparison
+  
+- ARIMA price prediction plot
+  - Prediction of future months Fluctuation of Stock Index based on Closing price.
+
+- Animated Bubble plot
+  - Depicts overall closing price changed in comparison with other.
+
+<!--chapter:end:03-method.Rmd-->
+
+
+# Algorithmic design
+
+Placeholder
+
+
+## How does your systems work holistically?
+### First iteration implemented a simple line chart over a date range
+### Second iteration added scatterplot showing the volume of trades made
+### Third iteration implemented multiple plot of multiple indexes on the same chart
+### Final iteration added more charts and predictive modeling capabilities.
+
+<!--chapter:end:04-application.Rmd-->
+
+# User evaluation
+
+## How would you test your system?
+- We deployed the shiny app on the website and then asked each team members to provide feedback. Designated team member was tasked with regression testing of all app features and reported back to team with issues found.
+
+- In the next iterations of our application development, we fixed all issues, tested all features worked according to design and redeployed the app.
+
+<!--chapter:end:05-summary.Rmd-->
+
+# Future work {-}
+
+## What could you do next? {-}
+- We have a plan to include external factor like Inflation rate, crude oil index, etc to understand impact of their data on US Stock index.
+
+- We also plan on linking each Stock Index with their associated country name, so that the name and labels of the indexes would be easily understood by a wider audience.
+
+- Adding more customization options in the left navigation panel would allow us to customize our graphs & charts to the users preference. Other options can also be used to add/remove features like trend line, smoothing line, moving average, etc to our visualizations.
+
+- The inclusion of user friendly options like print, save, share or email would give our application the ability to be easily shared and consumed by a much wider audience.
+
+- Adding bootstrap features to our Shiny App as opposed to fluidpage for the charts, would allow it to be more responsive, to changes in the dimesnions of what ever device our application is being viewed on.
+
+<!--chapter:end:06-references.Rmd-->
+

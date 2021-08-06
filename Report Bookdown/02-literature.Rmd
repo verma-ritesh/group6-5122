@@ -1,0 +1,18 @@
+# Data/operation abstraction design
+
+## How did you prepare your data?
+- Here are the steps we took to prepare data:
+  1. Downloaded data from kaggle website
+  2. Imported this data into dataframe
+  3. Cleaned data and cast date alphanumeic field to data field
+  4. Finally created merged dataframe called Master Data
+
+## Datasets Charateristics
+
+```{r echo=FALSE, fig.align = 'center', out.width="80%"}
+knitr::include_graphics(rep("data_characteristics.JPG", 1))
+```
+
+- indexData - Raw index price information, prices are quoted in each exchanges national currency
+- IndexInfo - Stock exchange info including location, name of exchange, index ticker, and currency index is quoted in
+- indexProcessed - index price information with null values removed and closing prices in USD added as a column
